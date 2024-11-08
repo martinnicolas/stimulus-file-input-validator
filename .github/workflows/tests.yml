@@ -22,4 +22,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'yarn'
-    - run: yarn test
+    - run: |
+        yarn install --silent --non-interactive
+        yarn test
