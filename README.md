@@ -6,8 +6,6 @@ This package contains a Stimulus controller that allows you to run client side v
 
 ## Installation
 
-Install the package
-
 ```bash
   yarn add stimulus-file-input-validator
 ```
