@@ -21,6 +21,7 @@
     "dev": "vite",
     "prod": "vite build --mode netlify",
     "build": "vite build",
+    "preview": "vite preview",
     "lint": "eslint"
   }
 }
