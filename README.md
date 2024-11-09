@@ -2,7 +2,7 @@
 
 [![Tests](https://github.com/martinnicolas/stimulus-file-input-validator/actions/workflows/tests.yml/badge.svg)](https://github.com/martinnicolas/stimulus-file-input-validator/actions/workflows/tests.yml) [![Coverage](https://github.com/martinnicolas/stimulus-file-input-validator/actions/workflows/coverage.yml/badge.svg)](https://github.com/martinnicolas/stimulus-file-input-validator/actions/workflows/coverage.yml) [![Wercker](https://img.shields.io/github/license/mashape/apistatus.svg)](https://opensource.org/licenses/MIT)
 
-This package contains a Stimulus controller that allows you to run client side validations for files size and extension. This is an usefull aproachment for complement server side validations or prevent server configuration.
+A Stimulus controller that allows you to run client side validations for files size and extension. This is an usefull aproachment for complement server side validations or prevent server configuration.
 
 ## Installation
 
