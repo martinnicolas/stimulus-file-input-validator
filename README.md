@@ -65,6 +65,10 @@ You can customize error messages by setting `data-file-input-validator-max-file-
 ```
 If no custom error messages are set the controller will use the default values.
 
+## Contributing
+
+Bug reports and pull requests are welcome on GitHub at https://github.com/martinnicolas/stimulus-file-input-validator.
+
 ## License
 
 The package is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
