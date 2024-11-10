@@ -1,11 +1,27 @@
 {
   "name": "stimulus-file-input-validator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Client side file input validations for files size and extension",
-  "main": "index.ts",
+  "keywords": [
+    "stimulus",
+    "stimulusjs",
+    "stimulus controller",
+    "file input validator"
+  ],
+  "type": "module",
+  "main": "dist/file-input-validator.js",
+  "exports": {
+    ".": {
+      "import": "dist/file-input-validator.js",
+      "require": "dist/file-input-validator.umd.cjs"
+    }
+  },
+  "repository": "git@github.com:martinnicolas/stimulus-file-input-validator.git",
+  "bugs": {
+    "url": "https://github.com/martinnicolas/stimulus-file-input-validator/issues"
+  },
   "author": "martinnicolas <ttincho77@gmail.com>",
   "license": "MIT",
-  "type": "module",
   "devDependencies": {
     "@babel/preset-typescript": "^7.26.0",
     "@hotwired/stimulus": "^3.2.2",
