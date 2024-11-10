@@ -1,6 +1,6 @@
 {
   "name": "stimulus-file-input-validator",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Client side file input validations for files size and extension",
   "keywords": [
     "stimulus",
