@@ -7,17 +7,17 @@ on:
     branches: [ "master" ]
 
 jobs:
-  tests:
+  lint:
 
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
-        node-version: [20.18.0]
+        node-version: [20.x]
 
     steps:
     - uses: actions/checkout@v4
-    - name: tests with Node.js ${{ matrix.node-version }}
+    - name: lint with Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4
       with:
         node-version: ${{ matrix.node-version }}
