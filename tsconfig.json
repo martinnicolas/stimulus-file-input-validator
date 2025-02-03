@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "es6", "es2016"],
+    "types": ["vite/client"],
+    "skipLibCheck": true
+  },
+  "exclude": ["node_modules", "spec"]
+}

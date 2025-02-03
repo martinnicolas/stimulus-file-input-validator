@@ -32,13 +32,12 @@
         <div class="col-lg-6 mx-auto">
           <p class="lead mb-4">A Stimulus controller that allows you to run client side validations for files size and extension.</p>
           <p class="text-center mt-3">
-            <img src="https://img.shields.io/npm/v/stimulus-file-input-validator.svg"/>
-
-            <img src="https://github.com/martinnicolas/stimulus-file-input-validator/actions/workflows/tests.yml/badge.svg"/>
-
-            <img src="https://github.com/martinnicolas/stimulus-file-input-validator/actions/workflows/coverage.yml/badge.svg"/>
-
-            <img src="https://img.shields.io/github/license/mashape/apistatus.svg"/>
+            <a href="https://badge.fury.io/js/stimulus-file-input-validator"><img src="https://badge.fury.io/js/stimulus-file-input-validator.svg?icon=si%3Anpm"></a>
+            <a href="https://www.npmjs.com/package/stimulus-file-input-validator"><img src="https://img.shields.io/npm/dt/stimulus-file-input-validator.svg"></a>
+            <a href="https://github.com/martinnicolas/stimulus-file-input-validator/actions/workflows/tests.yml"><img src="https://github.com/martinnicolas/stimulus-file-input-validator/actions/workflows/tests.yml/badge.svg"></a>
+            <a href="https://github.com/martinnicolas/stimulus-file-input-validator/actions/workflows/coverage.yml"><img src="https://github.com/martinnicolas/stimulus-file-input-validator/actions/workflows/coverage.yml/badge.svg"></a>
+            <a href="https://github.com/martinnicolas/stimulus-file-input-validator/actions/workflows/lint.yml"><img src="https://github.com/martinnicolas/stimulus-file-input-validator/actions/workflows/lint.yml/badge.svg"></a>
+            <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/github/license/mashape/apistatus.svg"></a>
           </p>
         </div>
       </div>
@@ -67,12 +66,32 @@
       <form data-controller="file-input-validator"
         data-file-input-validator-max-file-size-value="20"
         data-file-input-validator-valid-extensions-value='["jpg", "png"]'
-        data-file-input-validator-max-file-exceeded-error-message-value="Wrong file size"
+        data-file-input-validator-max-file-size-exceeded-error-message-value="Wrong file size"
         data-file-input-validator-invalid-extension-error-message-value="Invalid extension">
         <div class="mb-3">
           <label for="file-input" class="form-label">Load a file</label>
 
           <input type="file" id="file-input" name="file-input" class="form-control" data-file-input-validator-target="fileInput" data-action="change->file-input-validator#validate">
+          <div class="form-text mb-3"> <strong>Max file size:</strong> 20MB <strong>Valid extensions:</strong> .jpg, .png</div>
+          <div class="form-text" data-file-input-validator-target="errorMessage"></div>
+          <template data-file-input-validator-target="errorTemplate">
+            <div class="alert alert-danger">
+              ERROR_MESSAGE
+            </div>
+          </template>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+      <h3 class="mt-3 fs-2 text-body-emphasis">Support for multiple files validations</h3>
+      <form data-controller="file-input-validator"
+        data-file-input-validator-max-file-size-value="20"
+        data-file-input-validator-valid-extensions-value='["jpg", "png"]'>
+        <div class="mb-3">
+          <label for="file-input" class="form-label">Load a file</label>
+
+          <input type="file" id="file-input" multiple name="file-input" class="form-control" data-file-input-validator-target="fileInput" data-action="change->file-input-validator#validate">
           <div class="form-text mb-3"> <strong>Max file size:</strong> 20MB <strong>Valid extensions:</strong> .jpg, .png</div>
           <div class="form-text" data-file-input-validator-target="errorMessage"></div>
           <template data-file-input-validator-target="errorTemplate">

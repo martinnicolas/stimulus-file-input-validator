@@ -1,6 +1,10 @@
 # Stimulus File Input Validator
-[![](https://img.shields.io/npm/v/stimulus-file-input-validator.svg)](https://www.npmjs.com/package/stimulus-file-input-validator)
-[![Tests](https://github.com/martinnicolas/stimulus-file-input-validator/actions/workflows/tests.yml/badge.svg)](https://github.com/martinnicolas/stimulus-file-input-validator/actions/workflows/tests.yml) [![Coverage](https://github.com/martinnicolas/stimulus-file-input-validator/actions/workflows/coverage.yml/badge.svg)](https://github.com/martinnicolas/stimulus-file-input-validator/actions/workflows/coverage.yml) [![Wercker](https://img.shields.io/github/license/mashape/apistatus.svg)](https://opensource.org/licenses/MIT)
+[![npm version](https://badge.fury.io/js/stimulus-file-input-validator.svg?icon=si%3Anpm)](https://badge.fury.io/js/stimulus-file-input-validator)
+[![npm total downloads](https://img.shields.io/npm/dt/stimulus-file-input-validator.svg)](https://www.npmjs.com/package/stimulus-file-input-validator)
+[![Tests](https://github.com/martinnicolas/stimulus-file-input-validator/actions/workflows/tests.yml/badge.svg)](https://github.com/martinnicolas/stimulus-file-input-validator/actions/workflows/tests.yml) 
+[![Coverage](https://github.com/martinnicolas/stimulus-file-input-validator/actions/workflows/coverage.yml/badge.svg)](https://github.com/martinnicolas/stimulus-file-input-validator/actions/workflows/coverage.yml) 
+[![Lint](https://github.com/martinnicolas/stimulus-file-input-validator/actions/workflows/lint.yml/badge.svg)](https://github.com/martinnicolas/stimulus-file-input-validator/actions/workflows/lint.yml) 
+[![Wercker](https://img.shields.io/github/license/mashape/apistatus.svg)](https://opensource.org/licenses/MIT)
 
 A Stimulus controller that allows you to run client side validations for files size and extension. This is an usefull aproachment for complement server side validations.
 
@@ -64,6 +68,14 @@ You can customize error messages by setting `data-file-input-validator-max-file-
     >
 ```
 If no custom error messages are set the controller will use the default values.
+
+## Support for multiple files validations
+
+You can use `multiple` html attribute to apply the validations values to multiple files.
+
+```html
+  <input type="file" multiple id="myfile" name="myfile" data-file-input-validator-target="fileInput" data-action="change->file-input-validator#validate">
+```
 
 ## Contributing
 
