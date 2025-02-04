@@ -63,7 +63,7 @@ You can customize error messages by setting `data-file-input-validator-max-file-
   <form data-controller="file-input-validator"
     data-file-input-validator-max-file-size-value="20"
     data-file-input-validator-valid-extensions-value='["jpg", "png"]'
-    data-file-input-validator-max-file-exceeded-error-message-value="Wrong file size"
+    data-file-input-validator-max-file-size-exceeded-error-message-value="Wrong file size"
     data-file-input-validator-invalid-extension-error-message-value="Invalid extension"
     >
 ```
