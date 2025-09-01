@@ -57,7 +57,7 @@ Define the following data:
 
 ## Custom messages
 
-You can customize error messages by setting `data-file-input-validator-max-file-exceeded-error-message-value` and `data-file-input-validator-invalid-extension-error-message-value`.
+You can customize error messages by setting `data-file-input-validator-max-file-size-exceeded-error-message-value` and `data-file-input-validator-invalid-extension-error-message-value`.
 
 ```html
   <form data-controller="file-input-validator"
